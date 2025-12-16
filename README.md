@@ -1,2 +1,1 @@
-# Promise utility methods
-useContext hook
+# useContext hook
