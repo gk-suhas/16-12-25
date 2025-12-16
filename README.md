@@ -48,3 +48,22 @@ when to use:
 when to use:
 -> Large data
 -> Offline apps
+
+# how to use ssh
+
+ssh-keygen -t ed25519 -C "karanamsuhas80@gmail.com" // generate ssh key
+
+
+Start-Service ssh-agent
+
+
+ssh-add C:\Users\Suhas\.ssh\id_ed25519
+
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINSLUJFh4QqkFEivEMSLSy2Kd6TL4A2dWaPpHUi4YcHo karanamsuhas80@gmail.com
+// added this in github > settings > ssh and gpg keys > add ssh key
+
+ssh -T git@github.com // test ssh connection
+
+
+o/p:- Hi Suhas-Gk! You've successfully authenticated, but GitHub does not provide shell access.
